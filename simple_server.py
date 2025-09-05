@@ -1,3 +1,4 @@
+# simple_server.py
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
@@ -21,3 +22,4 @@ def poll():
         return []
     out, queue = queue.copy(), []
     return JSONResponse(out)
+
